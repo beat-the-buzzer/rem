@@ -1,0 +1,93 @@
+html{
+    font-size: 6.8px;
+}
+/**
+ * iPhone 4/4s landscape & portrait
+ */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (max-device-height: 480px){
+    html {
+        font-size: 6.8px;
+    }
+}
+/**
+ *  iPhone 5/5s landscape & portrait
+ */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (min-device-height: 568px) {
+    html {
+        font-size: 6.8px;
+    }
+}
+
+//iPhone 6
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    html{
+       font-size: 8px;
+    }
+}
+//iPhone 6+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+    html{
+        font-size: 7.8px;
+    }
+}
+//more
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+    html{
+        font-size: 7.8px;
+    }
+}
+
+/********************** android **********************/
+/**
+ *  Galaxy S3 landscape & portrait
+ */
+@media screen and (device-width: 320px) and (device-height: 640px) {
+    html{
+        font-size: 7.5px;
+    }
+}
+/**
+ *  Galaxy S4 landscape & portrait
+ */
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    html{
+        font-size: 7.5px;
+    }
+}
+/**
+ *  Galaxy S5 landscape & portrait
+ */
+@media screen and (device-width: 360px) and (device-height: 640px) {
+    html{
+        font-size: 7.8px;
+    }
+}
+/**
+ *  360
+ */
+@media screen and (device-width: 376px) and (device-height: 599px) {
+    html{
+        font-size: 7.8px;
+    }
+}
+/********************** pad **********************/
+/**
+ *  iPad Mini / iPad 1/2 landscape & portrait
+ */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
+/**
+ *  iPad 3/4 landscape & portrait
+ */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
+/**
+ *  Galaxy Tab 10.1 landscape & portrait(orientation: ##)(-webkit-min-device-pixel-ratio: ##)
+ */
+@media(min-device-width: 800px) and (max-device-width: 1280px) {}
+/**
+ *  Asus Nexus 7 landscape & portrait
+ */
+@media screen and (device-width: 601px) and (device-height: 906px) {}
+/**
+ *  Kindle Fire HD 8.9" landscape & portrait
+ */
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {}

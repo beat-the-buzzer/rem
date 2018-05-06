@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rem</title>
+    <style>
+        /*
+            不让css的顺序来影响效果
+        */
+
+        /*
+        @media screen and (max-width:360px) and (min-width:321px){
+            html{
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width:320px) {
+            html {
+                font-size: 24px;
+            }
+        }
+        */
+
+        /* 
+        html {
+            font-size: 17px;
+        } 
+        */
+
+        .box{
+            width: 10rem;
+            /* width: 160px; */
+            height: 10rem;
+            background: red
+        }
+        .text{
+            color: #fff;
+            font-size: 1rem; 
+            /* 1rem = 17px = html的font-size */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p class="text">hello rem</p>
+    </div>
+    <script>
+        // 获取屏幕宽度
+        let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        console.log(htmlWidth);
+        let htmlDom = document.getElementsByTagName('html')[0];
+        htmlDom.style.fontSize = htmlWidth / 10 + 'px';
+    </script>
+</body>
+</html>
